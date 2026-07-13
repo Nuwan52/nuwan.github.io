@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Twin Robot Training - Nuwan Sanjeewa</title>
+    <link rel="stylesheet" href="project-detail.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-layer bg-layer-1"></div>
+        <div class="bg-layer bg-layer-2"></div>
+        <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-microchip"></i>
+                    <div class="logo-pulse"></div>
+                </div>
+                <span class="logo-text">Nuwan Sanjeewa</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index-advanced.html" class="nav-link">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Portfolio
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="hero-particles"></div>
+        <div class="project-hero-content">
+            <div class="project-badge">
+                <i class="fas fa-vr-cardboard"></i>
+                <span>Robotics & AI Project</span>
+            </div>
+            <h1 class="project-title">Digital Twin and Training Robot for Complex Tasks</h1>
+            <p class="project-subtitle">
+                Advanced digital twin environment in NVIDIA Isaac Sim for autonomous warehouse operations and robotic assembly
+            </p>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>June 2024 - Present</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Ongoing</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-user"></i>
+                    <span>Lead Robotics Engineer</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-hero-image">
+            <div class="image-container">
+                <img src="upload/openarm.jfif" alt="Digital Twin Robot Project">
+                <div class="image-overlay"></div>
+                <div class="image-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-section">
+        <div class="container">
+            <h2 class="section-title">Project Overview</h2>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <p>
+                        This groundbreaking project involves developing a sophisticated digital twin environment using NVIDIA Isaac Sim 
+                        to simulate fully autonomous warehouse operations and complex robotic assembly tasks. The system bridges the gap 
+                        between simulation and real-world deployment through advanced reinforcement learning and imitation learning techniques.
+                    </p>
+                    <p>
+                        By leveraging cutting-edge robotics simulation technology, we've created a comprehensive training pipeline that 
+                        enables humanoid robots (OpenArm) and articulated robots (UR5) to learn complex manipulation tasks through 
+                        simulated experience before deployment in real-world scenarios.
+                    </p>
+                </div>
+                <div class="overview-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Sim-to-Real Transfer</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10x</div>
+                        <div class="stat-label">Faster Training</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Simulation Running</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Implementation -->
+    <section class="project-section section-dark">
+        <div class="container">
+            <h2 class="section-title">Technical Implementation</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>NVIDIA Isaac Sim</h3>
+                    <p>
+                        Developed comprehensive digital twin environment with physics-based simulation, 
+                        sensor modeling, and realistic warehouse scenarios for robot training.
+                    </p>
+                    <ul>
+                        <li>Physics-based simulation</li>
+                        <li>Sensor modeling (LiDAR, cameras)</li>
+                        <li>Warehouse environment design</li>
+                    </ul>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Reinforcement Learning</h3>
+                    <p>
+                        Implemented advanced RL algorithms including PPO, SAC, and curriculum learning 
+                        for complex manipulation and navigation tasks.
+                    </p>
+                    <ul>
+                        <li>PPO and SAC algorithms</li>
+                        <li>Curriculum learning</li>
+                        <li>Reward engineering</li>
+                    </ul>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Imitation Learning</h3>
+                    <p>
+                        Developed imitation learning pipelines using human demonstrations and 
+                        motion retargeting for rapid skill acquisition.
+                    </p>
+                    <ul>
+                        <li>Behavioral cloning</li>
+                        <li>Motion retargeting</li>
+                        <li>Demonstration collection</li>
+                    </ul>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Jetson Deployment</h3>
+                    <p>
+                        Deployed trained policies on NVIDIA Jetson Nano with ROS2 Humble for 
+                        real-world execution of simulated behaviors.
+                    </p>
+                    <ul>
+                        <li>Model optimization</li>
+                        <li>ROS2 integration</li>
+                        <li>Real-time inference</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Achievements -->
+    <section class="project-section">
+        <div class="container">
+            <h2 class="section-title">Key Achievements</h2>
+            <div class="achievements-timeline">
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Humanoid Robot Training</h3>
+                        <p>Successfully trained OpenArm humanoid robots for complex manipulation tasks using RL and IL in simulation.</p>
+                    </div>
+                </div>
+                
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Real-time Perception Pipeline</h3>
+                        <p>Optimized high-dimensional perception-to-action pipelines achieving real-time image-to-motor command execution.</p>
+                    </div>
+                </div>
+                
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Sim-to-Real Transfer</h3>
+                        <p>Achieved 95% success rate in transferring trained policies from simulation to real robots with minimal fine-tuning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Used -->
+    <section class="project-section section-dark">
+        <div class="container">
+            <h2 class="section-title">Technologies Used</h2>
+            <div class="tech-stack">
+                <div class="tech-category">
+                    <h3>Simulation</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">NVIDIA Isaac Sim</span>
+                        <span class="tech-tag">Isaac Lab</span>
+                        <span class="tech-tag">Unity 3D</span>
+                        <span class="tech-tag">Physics Engine</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3>AI/ML</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">Reinforcement Learning</span>
+                        <span class="tech-tag">Imitation Learning</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">TensorFlow</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3>Robotics</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">ROS2 Humble</span>
+                        <span class="tech-tag">OpenArm</span>
+                        <span class="tech-tag">UR5</span>
+                        <span class="tech-tag">MoveIt</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3>Hardware</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">NVIDIA Jetson Nano</span>
+                        <span class="tech-tag">RealSense Cameras</span>
+                        <span class="tech-tag">LiDAR</span>
+                        <span class="tech-tag">Servo Motors</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery -->
+    <section class="project-section">
+        <div class="container">
+            <h2 class="section-title">Project Gallery</h2>
+            <div class="project-gallery">
+                <div class="gallery-item">
+                    <img src="upload/openarm5.jpg" alt="Isaac Sim Environment">
+                    <div class="gallery-overlay">
+                        <h4>Isaac Sim Environment</h4>
+                        <p>Digital twin warehouse simulation</p>
+                    </div>
+                </div>
+                
+            
+                <div class="gallery-item">
+                    <img src="upload/openarm1.jpeg" alt="Real Robot">
+                    <div class="gallery-overlay">
+                        <h4>Real Robot Deployment</h4>
+                        <p>Jetson Nano powered robot</p>
+                    </div>
+                </div>
+
+
+                <div class="gallery-item">
+                    <img src="upload/openarm4 .jpeg" alt="Real Robot">
+                    <div class="gallery-overlay">
+                        <h4>Real Robot Deployment</h4>
+                        <p>Jetson Nano powered robot</p>
+                    </div>
+                </div>
+
+
+                <div class="gallery-item">
+                    <a href="https://youtube.com/shorts/QREc-UUEo9M" target="_blank">
+                        <img src="https://img.youtube.com/vi/QREc-UUEo9M/0.jpg" alt="Project Video">
+                        <div class="gallery-overlay">
+                            <h4>OpenArm Traning</h4>
+                            <p>Click to watch on YouTube</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="gallery-item">
+                    <a href="https://youtube.com/shorts/AiUexuEVYpg" target="_blank">
+                        <img src="https://img.youtube.com/vi/AiUexuEVYpg/0.jpg" alt="Project Video">
+                        <div class="gallery-overlay">
+                            <h4>Sim-Real Physical OpenArm</h4>
+                            <p>Click to watch on YouTube</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="gallery-item">
+                    <a href="https://youtube.com/shorts/rOwXbWiOk-o" target="_blank">
+                        <img src="https://img.youtube.com/vi/rOwXbWiOk-o/0.jpg" alt="Project Video">
+                        <div class="gallery-overlay">
+                            <h4>Nvidia Simualtion - UR5</h4>
+                            <p>Click to watch on YouTube</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="project-footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="index-advanced.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Portfolio</span>
+                </a>
+                <div class="footer-links">
+                    <a href="mailto:snuwan098@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nuwan-sanjeewa-556b471b5/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="tel:+94719894561">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="project-detail.js"></script>
+</body>
+</html>

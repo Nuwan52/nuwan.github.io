@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Monitoring IoT - Nuwan Sanjeewa</title>
+    <link rel="stylesheet" href="project-detail.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-layer bg-layer-1"></div>
+        <div class="bg-layer bg-layer-2"></div>
+        <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-microchip"></i>
+                    <div class="logo-pulse"></div>
+                </div>
+                <span class="logo-text">Nuwan Sanjeewa</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index-advanced.html" class="nav-link">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Portfolio
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="hero-particles"></div>
+        <div class="project-hero-content">
+            <div class="project-badge">
+                <i class="fas fa-wifi"></i>
+                <span>IoT Project</span>
+            </div>
+            <h1 class="project-title">Energy Monitoring IoT System</h1>
+            <p class="project-subtitle">
+                Scalable ESP32-based IoT solution for real-time energy monitoring of 100+ machines with remote access
+            </p>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>June 2023</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-clock"></i>
+                    <span>3 months</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-user"></i>
+                    <span>IoT Developer</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-hero-image">
+            <div class="image-container">
+                <img src="upload/dashboard1.jpeg"
+                    alt="IoT Energy Monitoring">
+                <div class="image-overlay"></div>
+                <div class="image-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-section">
+        <div class="container">
+            <h2 class="section-title">Project Overview</h2>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <p>
+                        This comprehensive IoT project involved developing an ESP32-based energy monitoring system
+                        capable of
+                        tracking energy consumption for over 100 machines simultaneously. The system provides real-time
+                        data
+                        visualization, detailed usage reports, and actionable insights for energy optimization.
+                    </p>
+                    <p>
+                        The solution features secure remote access through Cloudflare tunneling, responsive web
+                        interfaces,
+                        and scalable architecture that significantly improved operational efficiency and enabled
+                        data-driven
+                        decision making for energy management.
+                    </p>
+                </div>
+                <div class="overview-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Monitored Machines</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Real-time Monitoring</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15%</div>
+                        <div class="stat-label">Energy Savings</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Implementation -->
+    <section class="project-section section-dark">
+        <div class="container">
+            <h2 class="section-title">Technical Implementation</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>ESP32 Hardware</h3>
+                    <p>
+                        Developed custom ESP32-based IoT devices with RS485 communication for reliable
+                        energy data collection from industrial machines and equipment.
+                    </p>
+                    <ul>
+                        <li>Custom PCB design</li>
+                        <li>RS485 communication</li>
+                        <li>Low-power operation</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>MQTT Communication</h3>
+                    <p>
+                        Implemented robust MQTT protocol for efficient data transmission from edge devices
+                        to local server with guaranteed message delivery.
+                    </p>
+                    <ul>
+                        <li>MQTT broker setup</li>
+                        <li>QoS levels implementation</li>
+                        <li>Message queuing</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cloudflare Tunnel</h3>
+                    <p>
+                        Enabled secure remote access through Cloudflare tunneling, eliminating the need
+                        for complex VPN configurations while maintaining security.
+                    </p>
+                    <ul>
+                        <li>Secure tunneling</li>
+                        <li>SSL termination</li>
+                        <li>Access control</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Web Dashboard</h3>
+                    <p>
+                        Created responsive web interface with real-time data visualization, historical
+                        analytics, and comprehensive reporting capabilities.
+                    </p>
+                    <ul>
+                        <li>Real-time charts</li>
+                        <li>Historical analytics</li>
+                        <li>Export functionality</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Achievements -->
+    <section class="project-section">
+        <div class="container">
+            <h2 class="section-title">Key Achievements</h2>
+            <div class="achievements-timeline">
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Scalable Architecture</h3>
+                        <p>Successfully deployed system monitoring 100+ machines simultaneously with sub-second data
+                            updates.</p>
+                    </div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Secure Remote Access</h3>
+                        <p>Implemented Cloudflare tunneling for secure remote monitoring without compromising network
+                            security.</p>
+                    </div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Data-Driven Insights</h3>
+                        <p>Enabled actionable energy optimization insights leading to 30% reduction in energy
+                            consumption.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Used -->
+    <section class="project-section section-dark">
+        <div class="container">
+            <h2 class="section-title">Technologies Used</h2>
+            <div class="tech-stack">
+                <div class="tech-category">
+                    <h3>Hardware</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">ESP32</span>
+                        <span class="tech-tag">RS485</span>
+                        <span class="tech-tag">Energy Meters</span>
+                        <span class="tech-tag">Custom PCB</span>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>Communication</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">MQTT</span>
+                        <span class="tech-tag">WiFi</span>
+                        <span class="tech-tag">Cloudflare</span>
+                        <span class="tech-tag">REST API</span>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>Frontend</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Chart.js</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">WebSocket</span>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>Backend</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery -->
+    <section class="project-section">
+        <div class="container">
+            <h2 class="section-title">Project Gallery</h2>
+            <div class="project-gallery">
+                <div class="gallery-item">
+                    <img src="upload/dashboard1.jpeg"
+                        alt="IoT Device">
+                    <div class="gallery-overlay">
+                        <h4>Analytics Reports</h4>
+                        <p>Energy consumption insights</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="upload/dashboard2.jpeg"
+                        alt="Dashboard">
+                    <div class="gallery-overlay">
+                        <h4>Analytics Reports</h4>
+                        <p>Energy consumption insights</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="upload/dashboard3.jpeg"
+                        alt="Data Analytics">
+                    <div class="gallery-overlay">
+                        <h4>Analytics Reports</h4>
+                        <p>Energy consumption insights</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="upload/dashboard4.jpeg"
+                        alt="Data Analytics">
+                    <div class="gallery-overlay">
+                        <h4>Analytics Reports</h4>
+                        <p>Energy consumption insights</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="upload/font_enegy.jpg" alt="Data Analytics">
+                    <div class="gallery-overlay">
+                        <h4>Analytics Reports</h4>
+                        <p>Energy consumption insights</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="upload/side_energy.jpg" alt="Data Analytics">
+                    <div class="gallery-overlay">
+                        <h4>Analytics Reports</h4>
+                        <p>Energy consumption insights</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="upload/iotpcb1.png" alt="Data Analytics">
+                    <div class="gallery-overlay">
+                        <h4>PCB</h4>
+                        <p>EasyEDA PCB</p>
+                    </div>
+                </div>
+
+
+                <div class="gallery-item">
+                    <img src="upload/iotpcb2.png" alt="Data Analytics">
+                    <div class="gallery-overlay">
+                        <h4>PCB</h4>
+                        <p>EasyEDA PCB</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="https://youtu.be/gRLYWs2InpA" target="_blank">
+                        <img src="https://img.youtube.com/vi/gRLYWs2InpA/0.jpg" alt="Project Video">
+                        <div class="gallery-overlay">
+                            <h4>Project Demo Video</h4>
+                            <p>Click to watch on YouTube</p>
+                        </div>
+                    </a>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="project-footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="index-advanced.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Portfolio</span>
+                </a>
+                <div class="footer-links">
+                    <a href="mailto:snuwan098@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nuwan-sanjeewa-556b471b5/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="tel:+94719894561">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="project-detail.js"></script>
+</body>
+
+</html>

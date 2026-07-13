@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMR Development - Nuwan Sanjeewa</title>
+    <link rel="stylesheet" href="project-detail.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-layer bg-layer-1"></div>
+        <div class="bg-layer bg-layer-2"></div>
+        <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-robot"></i>
+                    <div class="logo-pulse"></div>
+                </div>
+                <span class="logo-text">Nuwan Sanjeewa</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index-advanced.html" class="nav-link">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Portfolio
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="hero-particles"></div>
+        <div class="project-hero-content">
+            <div class="project-badge">
+                <i class="fas fa-truck-moving"></i>
+                <span>AMR Project</span>
+            </div>
+            <h1 class="project-title">Autonomous Mobile Robot (AMR) for Factory Automation</h1>
+            <p class="project-subtitle">
+                Development of a prototype AMR for factory automation with ROS2, SLAM navigation, and embedded hardware
+                integration.
+            </p>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>Apr 2024 – Ongoing</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Prototype & Simulation</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-user"></i>
+                    <span>Control & Electronics Developer</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-hero-image">
+            <div class="image-container">
+                <img src="upload/agv.jfif" alt="AMR Prototype">
+                <div class="image-overlay"></div>
+                <div class="image-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-section">
+        <div class="container">
+            <h2 class="section-title">Project Overview</h2>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <p>
+                        Designed and developed a small-scale Autonomous Mobile Robot (AMR) for factory automation at
+                        Phoenix Industries.
+                        The system integrates ROS2-based control, Gazebo simulation, and embedded hardware for real-time
+                        navigation and mapping.
+                    </p>
+                    <p>
+                        Implemented SLAM (Simultaneous Localization and Mapping) for autonomous navigation, allowing the
+                        AMR to operate safely in factory environments.
+                        The project is being scaled using Nvidia Jetson and Nvidia Omniverse for large-scale training
+                        and simulation, targeting the factory’s first automated forklift system.
+                    </p>
+                </div>
+                <div class="overview-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">AMR Prototype</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Integrated Sensors</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">SLAM Test Runs</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Implementation -->
+    <section class="project-section section-dark">
+        <div class="container">
+            <h2 class="section-title">Technical Implementation</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>ROS2 Control</h3>
+                    <p>
+                        Developed robot control systems using ROS2, implementing publishers, subscribers, and real-time
+                        sensor integration.
+                    </p>
+                    <ul>
+                        <li>Custom ROS2 nodes</li>
+                        <li>Multi-sensor integration</li>
+                        <li>Real-time feedback control</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>SLAM & Navigation</h3>
+                    <p>
+                        Implemented Simultaneous Localization and Mapping (SLAM) for autonomous navigation in dynamic
+                        factory environments.
+                    </p>
+                    <ul>
+                        <li>Mapping with LIDAR & sensors</li>
+                        <li>Path planning & obstacle avoidance</li>
+                        <li>Trajectory optimization</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Embedded Hardware</h3>
+                    <p>
+                        Integrated Arduino and other embedded electronics for real-time control of motors, sensors, and
+                        actuators.
+                    </p>
+                    <ul>
+                        <li>Motor control</li>
+                        <li>Sensor feedback</li>
+                        <li>Electronics hardware design</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Simulation & Scaling</h3>
+                    <p>
+                        Used Gazebo and Nvidia Omniverse for large-scale training, simulation, and testing of the AMR
+                        control system.
+                    </p>
+                    <ul>
+                        <li>Gazebo simulation</li>
+                        <li>Nvidia Jetson acceleration</li>
+                        <li>Scalable AMR training</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Achievements -->
+    <section class="project-section">
+        <div class="container">
+            <h2 class="section-title">Key Achievements</h2>
+            <div class="achievements-timeline">
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>AMR Prototype</h3>
+                        <p>Successfully designed and developed a fully functional small-scale AMR prototype.</p>
+                    </div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>SLAM Navigation</h3>
+                        <p>Implemented accurate SLAM-based navigation for autonomous operation in a factory setting.</p>
+                    </div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Simulation Scaling</h3>
+                        <p>Enabled large-scale training and testing using Gazebo, Nvidia Jetson, and Omniverse.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Used -->
+    <section class="project-section section-dark">
+        <div class="container">
+            <h2 class="section-title">Technologies Used</h2>
+            <div class="tech-stack">
+                <div class="tech-category">
+                    <h3>Hardware & Electronics</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">Motors & Actuators</span>
+                        <span class="tech-tag">Sensors & LIDAR</span>
+                        <span class="tech-tag">Embedded Control</span>
+                        <span class="tech-tag">Jetson Xavier</span>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>Software & Simulation</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">ROS2 Humble</span>
+                        <span class="tech-tag">Gazebo Simulation</span>
+                        <span class="tech-tag">SLAM Navigation</span>
+                        <span class="tech-tag">Path Planning</span>
+                        <span class="tech-tag">Nvidia Omniverse</span>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>Control & Integration</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">Real-Time Feedback</span>
+                        <span class="tech-tag">Trajectory Optimization</span>
+                        <span class="tech-tag">Multi-Sensor Fusion</span>
+                        <span class="tech-tag">Scalable AMR System</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery -->
+    <section class="project-section">
+        <div class="container">
+            <h2 class="section-title">Project Gallery</h2>
+            <div class="project-gallery">
+                <div class="gallery-item">
+                    <img src="upload/amr_robot.jpeg" alt="AMR Prototype">
+                    <div class="gallery-overlay">
+                        <h4>AMR Prototype</h4>
+                        <p>Small-scale autonomous mobile robot</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="upload/amr_simulation.jpeg" alt="AMR Simulation">
+                    <div class="gallery-overlay">
+                        <h4>Simulation</h4>
+                        <p>Gazebo simulation environment</p>
+                    </div>
+                </div>
+
+
+
+                <div class="gallery-item">
+                    <a href="https://youtu.be/AdLI9n1N2RM" target="_blank">
+                        <img src="https://img.youtube.com/vi/AdLI9n1N2RM/0.jpg" alt="Project Video">
+                        <div class="gallery-overlay">
+                            <h4>Project Demo Video</h4>
+                            <p>Click to watch on YouTube</p>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="gallery-item">
+                    <a href="https://youtube.com/shorts/zjNb_202V7Q" target="_blank">
+                        <img src="https://img.youtube.com/vi/zjNb_202V7Q/0.jpg" alt="Project Video">
+                        <div class="gallery-overlay">
+                            <h4>Project Demo Video</h4>
+                            <p>Click to watch on YouTube</p>
+                        </div>
+                    </a>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="project-footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="index-advanced.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Portfolio</span>
+                </a>
+                <div class="footer-links">
+                    <a href="mailto:snuwan098@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nuwan-sanjeewa-556b471b5/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="tel:+94719894561">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="project-detail.js"></script>
+</body>
+
+</html>

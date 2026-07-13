@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuwan Sanjeewa - Mechatronics Engineer</title>
+    <link rel="stylesheet" href="styles-advanced.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-container">
+            <div class="loader">
+                <div class="loader-circle"></div>
+                <div class="loader-circle"></div>
+                <div class="loader-circle"></div>
+            </div>
+            <div class="loader-text">
+                <span class="letter" data-letter="N">N</span>
+                <span class="letter" data-letter="u">u</span>
+                <span class="letter" data-letter="w">w</span>
+                <span class="letter" data-letter="a">a</span>
+                <span class="letter" data-letter="n">n</span>
+            </div>
+            <div class="loader-percentage">0%</div>
+        </div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-layer bg-layer-1"></div>
+        <div class="bg-layer bg-layer-2"></div>
+        <div class="bg-layer bg-layer-3"></div>
+        <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-microchip"></i>
+                    <div class="logo-pulse"></div>
+                </div>
+                <span class="logo-text">Nuwan Sanjeewa</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link" data-text="Home">Home</a>
+                <a href="#about" class="nav-link" data-text="About">About</a>
+                <a href="#skills" class="nav-link" data-text="Skills">Skills</a>
+                <a href="#experience" class="nav-link" data-text="Experience">Experience</a>
+                <a href="#projects" class="nav-link" data-text="Projects">Projects</a>
+                <a href="#education" class="nav-link" data-text="Education">Education</a>
+                <a href="#publications" class="nav-link" data-text="Publications">Publications</a>
+                <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-content">
+            <div class="hero-badge animate-fade-in-up">
+                <i class="fas fa-robot"></i>
+                <span>Mechatronics Engineer</span>
+                <div class="badge-glow"></div>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">
+                    <span class="letter-animate" data-delay="0">N</span>
+                    <span class="letter-animate" data-delay="100">u</span>
+                    <span class="letter-animate" data-delay="200">w</span>
+                    <span class="letter-animate" data-delay="300">a</span>
+                    <span class="letter-animate" data-delay="400">n</span>
+                </span>
+                <span class="title-line">
+                    <span class="letter-animate" data-delay="500">S</span>
+                    <span class="letter-animate" data-delay="600">a</span>
+                    <span class="letter-animate" data-delay="700">n</span>
+                    <span class="letter-animate" data-delay="800">j</span>
+                    <span class="letter-animate" data-delay="900">e</span>
+                    <span class="letter-animate" data-delay="1000">e</span>
+                    <span class="letter-animate" data-delay="1100">w</span>
+                    <span class="letter-animate" data-delay="1200">a</span>
+                </span>
+            </h1>
+            <p class="hero-subtitle animate-fade-in-up" data-delay="1400">
+                Results-driven mechatronics engineer specializing in robotics, AI, and control systems.
+                <span class="highlight">Passionate about innovative solutions</span> for industrial automation and
+                intelligent systems.
+            </p>
+            <div class="hero-buttons animate-fade-in-up" data-delay="1600">
+                <a href="#contact" class="btn btn-primary">
+                    <span class="btn-content">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact Me</span>
+                    </span>
+                    <div class="btn-ripple"></div>
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    <span class="btn-content">
+                        <i class="fas fa-folder"></i>
+                        <span>View Projects</span>
+                    </span>
+                    <div class="btn-ripple"></div>
+                </a>
+            </div>
+            <div class="hero-social animate-fade-in-up" data-delay="1800">
+                <a href="mailto:snuwan098@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                    <div class="social-ripple"></div>
+                </a>
+                <a href="https://www.linkedin.com/in/nuwan-sanjeewa-556b471b5/" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                    <div class="social-ripple"></div>
+                </a>
+                <a href="https://sites.google.com/view/nuwan-sanjeewa/" class="social-link">
+                    <i class="fas fa-globe"></i>
+                    <div class="social-ripple"></div>
+                </a>
+                <a href="tel:+94719894561" class="social-link">
+                    <i class="fas fa-phone"></i>
+                    <div class="social-ripple"></div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Profile Image -->
+        <div class="profile-image animate-fade-in-up" data-delay="2000">
+            <div class="profile-image-container">
+                <img src="upload/IMG_0084.JPG" alt="Nuwan Sanjeewa - Mechatronics Engineer">
+                <div class="profile-image-glow"></div>
+                <div class="profile-image-frame"></div>
+            </div>
+        </div>
+
+        <!-- 3D Floating Elements -->
+        <div class="floating-3d">
+            <div class="float-3d float-3d-1" data-speed="0.5">
+                <div class="cube">
+                    <div class="cube-face cube-front"><i class="fas fa-robot"></i></div>
+                    <div class="cube-face cube-back"><i class="fas fa-microchip"></i></div>
+                    <div class="cube-face cube-left"><i class="fas fa-brain"></i></div>
+                    <div class="cube-face cube-right"><i class="fas fa-cogs"></i></div>
+                    <div class="cube-face cube-top"><i class="fas fa-code"></i></div>
+                    <div class="cube-face cube-bottom"><i class="fas fa-database"></i></div>
+                </div>
+            </div>
+            <div class="float-3d float-3d-2" data-speed="0.3">
+                <div class="pyramid">
+                    <div class="pyramid-face pyramid-front"><i class="fas fa-rocket"></i></div>
+                    <div class="pyramid-face pyramid-back"><i class="fas fa-star"></i></div>
+                    <div class="pyramid-face pyramid-left"><i class="fas fa-bolt"></i></div>
+                    <div class="pyramid-face pyramid-right"><i class="fas fa-fire"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll</div>
+            <div class="scroll-arrow">
+                <div class="arrow-line"></div>
+                <div class="arrow-head"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="title-bg">ABOUT</span>
+                <span class="title-text">About Me</span>
+            </h2>
+            <div class="about-content">
+                <div class="about-text animate-on-scroll">
+                    <div class="text-reveal">
+                        <h3 class="gradient-text">Mechatronics Excellence</h3>
+                        <p class="fade-text">
+                            I am a results-driven mechatronics engineer with expertise in robotics, machine vision, AI,
+                            and control systems.
+                            Known for my ability to quickly master new technologies and solve complex engineering
+                            challenges, I have a strong
+                            multidisciplinary foundation in mechatronics, electronics, and computer science.
+                        </p>
+                        <p class="fade-text">
+                            I am passionate about applying innovative solutions to industrial automation, robotics, and
+                            intelligent systems,
+                            and I am committed to contributing effectively to high-impact engineering projects.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-stats animate-on-scroll">
+                    <div class="stat-card" data-value="5">
+                        <div class="stat-icon">
+                            <i class="fas fa-robot"></i>
+                            <div class="stat-pulse"></div>
+                        </div>
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label">AI Projects</div>
+                        <div class="stat-progress">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                    <div class="stat-card" data-value="12">
+                        <div class="stat-icon">
+                            <i class="fas fa-microchip"></i>
+                            <div class="stat-pulse"></div>
+                        </div>
+                        <div class="stat-number" data-target="6">0</div>
+                        <div class="stat-label">Custom Machines</div>
+                        <div class="stat-progress">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                    <div class="stat-card" data-value="150">
+                        <div class="stat-icon">
+                            <i class="fas fa-chart-line"></i>
+                            <div class="stat-pulse"></div>
+                        </div>
+                        <div class="stat-number" data-target="30">0 H</div>
+                        <div class="stat-label">Downtime Reduced</div>
+                        <div class="stat-progress">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                    <div class="stat-card" data-value="80">
+                        <div class="stat-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                            <div class="stat-pulse"></div>
+                        </div>
+                        <div class="stat-number" data-target="80">0 M</div>
+                        <div class="stat-label">Cost Savings</div>
+                        <div class="stat-progress">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="title-bg">SKILLS</span>
+                <span class="title-text">Technical Skills</span>
+            </h2>
+            <div class="skills-tabs animate-on-scroll">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="programming">
+                        <span class="tab-icon"><i class="fas fa-code"></i></span>
+                        <span class="tab-text">Programming</span>
+                        <div class="tab-indicator"></div>
+                    </button>
+                    <button class="tab-btn" data-tab="ai">
+                        <span class="tab-icon"><i class="fas fa-brain"></i></span>
+                        <span class="tab-text">AI & ML</span>
+                        <div class="tab-indicator"></div>
+                    </button>
+                    <button class="tab-btn" data-tab="robotics">
+                        <span class="tab-icon"><i class="fas fa-robot"></i></span>
+                        <span class="tab-text">Robotics</span>
+                        <div class="tab-indicator"></div>
+                    </button>
+                    <button class="tab-btn" data-tab="electronics">
+                        <span class="tab-icon"><i class="fas fa-circuit-board"></i></span>
+                        <span class="tab-text">Electronics</span>
+                        <div class="tab-indicator"></div>
+                    </button>
+                    <button class="tab-btn" data-tab="cloud">
+                        <span class="tab-icon"><i class="fas fa-cloud"></i></span>
+                        <span class="tab-text">Cloud</span>
+                        <div class="tab-indicator"></div>
+                    </button>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="programming">
+                        <div class="skills-grid">
+                            <div class="skill-card" data-skill="95">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-python"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>Python</span>
+                                    <span class="skill-level">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+                            <div class="skill-card" data-skill="90">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-code"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>C/C++</span>
+                                    <span class="skill-level">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+                            <div class="skill-card" data-skill="80">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-js"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>JavaScript/Node.js</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+
+
+                            <div class="skill-card" data-skill="75">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-database"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>SQL</span>
+                                    <span class="skill-level">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+
+
+
+                            <div class="skill-card" data-skill="50">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fa-solid fa-memory"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>Verilog </span>
+                                    <span class="skill-level">50%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+
+
+
+                            <div class="skill-card" data-skill="55">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fa-solid fa-gamepad"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>MATLAB </span>
+                                    <span class="skill-level">55%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+
+
+                            <div class="skill-card" data-skill="97">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fa-solid fa-code"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>C# </span>
+                                    <span class="skill-level">97%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="ai">
+                        <div class="skills-grid">
+                            <div class="skill-card" data-skill="85">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-brain"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>TensorFlow</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+
+                            <div class="skill-card" data-skill="90">
+
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fa-solid fa-airbnb"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>Agentic AI N8N , RagFlow , Ollama</span>
+                                    <span class="skill-level">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+
+
+
+                            <div class="skill-card" data-skill="80">
+
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fa-solid fa-robot"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>Imitation Learning </span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+
+
+
+                            <div class="skill-card" data-skill="80">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-fire"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>PyTorch</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+                            <div class="skill-card" data-skill="85">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-robot"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>Reinforcement Learning</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+                            <div class="skill-card" data-skill="80">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-link"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>LangChain</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="robotics">
+                        <div class="skills-grid">
+                            <div class="skill-card" data-skill="85">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-robot"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>ROS2</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+                            <div class="skill-card" data-skill="90">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-cube"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>NVIDIA Isaac Sim</span>
+                                    <span class="skill-level">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+                            <div class="skill-card" data-skill="80">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-gamepad"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>Unity 3D</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+                            <div class="skill-card" data-skill="95">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-microchip"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>Arduino/PIC/STM32/Microship/FPGA</span>
+                                    <span class="skill-level">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+
+                            <div class="skill-card" data-skill="75">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-cube"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>SolidWorks</span>
+                                    <span class="skill-level">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="electronics">
+                        <div class="skills-grid">
+                            <div class="skill-card" data-skill="90">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fa-solid fa-microchip"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>PCB Design</span>
+                                    <span class="skill-level">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+                            <div class="skill-card" data-skill="95">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-tools"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>Circuit Troubleshooting</span>
+                                    <span class="skill-level">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+                            <div class="skill-card" data-skill="80">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-drafting-compass"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>Oscilloscope / signal analyzer / signal generators </span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+                            <div class="skill-card" data-skill="75">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-cube"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>LT Spice / TINA-TI / Multisim </span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="cloud">
+                        <div class="skills-grid">
+                            <div class="skill-card" data-skill="80">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-aws"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>AWS</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+                            <div class="skill-card" data-skill="75">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-docker"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>Docker</span>
+                                    <span class="skill-level">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+                            <div class="skill-card" data-skill="85">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-git-alt"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>Git</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+                            <div class="skill-card" data-skill="80">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-linux"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>Linux</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+
+                            <div class="skill-card" data-skill="80">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-soundcloud"></i>
+                                        <div class="icon-orbit"></div>
+                                    </div>
+                                    <span>Oracle Could</span>
+                                    <span class="skill-level">60%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="title-bg">EXPERIENCE</span>
+                <span class="title-text">Professional Experience</span>
+            </h2>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-date">
+                        <div class="date-content">
+                            <span class="date-text">Jun 2023</span>
+                            <span class="date-separator">-</span>
+                            <span class="date-text">Present</span>
+                        </div>
+                        <div class="date-glow"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="content-glow"></div>
+                        <h3>Mechatronics Engineer</h3>
+                        <h4>Phoenix Industries Ltd</h4>
+                        <p class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Makadura, Sri Lanka
+                        </p>
+                        <ul>
+                            <li>Architected AI-driven solutions reducing downtime by 15%</li>
+                            <li>Engineered OEM firmware for 12 customized automation machines</li>
+                            <li>Led autonomous warehouse development and implementation</li>
+                            <li>Developed advanced robotics using Reinforcement Learning</li>
+                            <li>Trained humanoid and articulated robots in NVIDIA Isaac Sim</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Robotics</span>
+                            <span class="tag">Automation</span>
+                            <span class="tag">NVIDIA Isaac Sim</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-date">
+                        <div class="date-content">
+                            <span class="date-text">Mar 2022</span>
+                            <span class="date-separator">-</span>
+                            <span class="date-text">Sep 2022</span>
+                        </div>
+                        <div class="date-glow"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="content-glow"></div>
+                        <h3>Trainee Electronics Engineer</h3>
+                        <h4>Codegen International</h4>
+                        <p class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Colombo, Sri Lanka
+                        </p>
+                        <ul>
+                            <li>Engineered custom Electronic Control Units (ECUs) for R&D projects</li>
+                            <li>Designed high-density PCBs using Autodesk EAGLE</li>
+                            <li>Conducted deep-level circuit analysis and root-cause failure analysis</li>
+                            <li>Prototyped hardware solutions with HIL testing</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">PCB Design</span>
+                            <span class="tag">AutoCAD</span>
+                            <span class="tag">Circuit Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="title-bg">PROJECTS</span>
+                <span class="title-text">Featured Projects</span>
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card animate-on-scroll" onclick="window.open('project-ai-chatbot.html', '_blank')">
+                    <div class="project-glow"></div>
+                    <div class="project-bg-pattern"></div>
+                    <div class="project-image">
+                        <img src="upload/n8n_cover.png" alt="AI Chatbot Project">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="project-icon">
+                        <i class="fas fa-robot"></i>
+                        <div class="icon-ripple"></div>
+                    </div>
+                    <h3>AI Agent Based Chatbot For Technical Troubleshooting</h3>
+                    <p class="project-date">Jul 2025 - Nov 2025</p>
+                    <p>Designed N8N-based RAG system for technical troubleshooting with Telegram integration</p>
+                    <ul>
+                        <li>Implemented LLaMA LLM on internal server</li>
+                        <li>Created historical logging system for machine errors</li>
+                        <li>Reduced cloud LLM costs by 80%</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">N8N</span>
+                        <span class="tag">RAG</span>
+                        <span class="tag">LLaMA</span>
+                        <span class="tag">Telegram</span>
+                    </div>
+                    <div class="project-hover-effect"></div>
+                    <div class="click-indicator">
+                        <i class="fas fa-arrow-right"></i>
+                        <span>View Details</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll"
+                    onclick="window.open('project-digital-twin.html', '_blank')">
+                    <div class="project-glow"></div>
+                    <div class="project-bg-pattern"></div>
+                    <div class="project-image">
+                        <img src="upload/isaaclab.png" alt="Digital Twin Project">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="project-icon">
+                        <i class="fas fa-vr-cardboard"></i>
+                        <div class="icon-ripple"></div>
+                    </div>
+                    <h3>Digital Twin and Training Robot for Complex Tasks</h3>
+                    <p class="project-date">Jun 2024 - Present</p>
+                    <p>Developed digital twin environment in NVIDIA Isaac Sim for autonomous warehouse operations</p>
+                    <ul>
+                        <li>Trained humanoid robots using RL and IL</li>
+                        <li>Deployed policies on real robots via NVIDIA Jetson Nano</li>
+                        <li>Optimized perception-to-action pipelines for real-time execution</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">NVIDIA Isaac Sim</span>
+                        <span class="tag">ROS2</span>
+                        <span class="tag">Reinforcement Learning</span>
+                    </div>
+                    <div class="project-hover-effect"></div>
+                    <div class="click-indicator">
+                        <i class="fas fa-arrow-right"></i>
+                        <span>View Details</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll"
+                    onclick="window.open('project-vision-inspection.html', '_blank')">
+                    <div class="project-glow"></div>
+                    <div class="project-bg-pattern"></div>
+                    <div class="project-image">
+                        <img src="upload/vision.webp" alt="Vision Inspection Project">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="project-icon">
+                        <i class="fas fa-eye"></i>
+                        <div class="icon-ripple"></div>
+                    </div>
+                    <h3>High Speed Vision Inspection and Packing Machine</h3>
+                    <p class="project-date">Apr 2025 - Present</p>
+                    <p>Developed firmware and control software for high-speed vision inspection machine</p>
+                    <ul>
+                        <li>Achieved 0.7s inspection cycle time</li>
+                        <li>Implemented web-based HMI using Flask</li>
+                        <li>Integrated Hikrobot AI cameras and Leadshine servo motors</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">RS485 Modbus</span>
+                    </div>
+                    <div class="project-hover-effect"></div>
+                    <div class="click-indicator">
+                        <i class="fas fa-arrow-right"></i>
+                        <span>View Details</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll" onclick="window.open('project-iot-energy.html', '_blank')">
+                    <div class="project-glow"></div>
+                    <div class="project-bg-pattern"></div>
+                    <div class="project-image">
+                        <img src="upload/iot.webp" alt="IoT Energy Project">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="project-icon">
+                        <i class="fas fa-wifi"></i>
+                        <div class="icon-ripple"></div>
+                    </div>
+                    <h3>Energy Monitoring IoT System</h3>
+                    <p class="project-date">Jun 2023 - 2023</p>
+                    <p>Developed ESP32-based IoT device for energy monitoring with remote access</p>
+                    <ul>
+                        <li>Monitored over 100 machines simultaneously</li>
+                        <li>Enabled secure remote access via Cloudflare</li>
+                        <li>Created responsive web interface for data visualization</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">ESP32</span>
+                        <span class="tag">MQTT</span>
+                        <span class="tag">Cloudflare</span>
+                    </div>
+                    <div class="project-hover-effect"></div>
+                    <div class="click-indicator">
+                        <i class="fas fa-arrow-right"></i>
+                        <span>View Details</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll" onclick="window.open('northsails.html', '_blank')">
+                    <div class="project-glow"></div>
+                    <div class="project-bg-pattern"></div>
+
+                    <div class="project-image">
+                        <img src="upload/gantry.webp" alt="5 Axis CNC Gantry Robot Project">
+                        <div class="image-overlay"></div>
+                    </div>
+
+                    <div class="project-icon">
+                        <i class="fas fa-industry"></i>
+                        <div class="icon-ripple"></div>
+                    </div>
+
+                    <h3>5 Axis Large Scale CNC Gantry Robot Development (North Sails)</h3>
+                    <p class="project-date">Sep 2024 - Nov 2024</p>
+                    <p>Developed a fully custom 5-axis CNC gantry robot software stack with high-precision motion
+                        control.</p>
+
+                    <ul>
+                        <li>Built fully custom CNC software using the .NET Framework</li>
+                        <li>Integrated Teknic ClearPath SD motors via SDK for deterministic control</li>
+                        <li>Implemented jerk-free motion profiles, coordinate lerping, and trajectory planning with
+                            millimeter precision</li>
+                        <li>Used LattePanda single-board computer as a teach pendant and runtime host for the CNC
+                            application</li>
+                    </ul>
+
+                    <div class="project-tags">
+                        <span class="tag">CNC</span>
+                        <span class="tag">5-Axis</span>
+                        <span class="tag">.NET Framework</span>
+                        <span class="tag">Teknic ClearPath SD</span>
+                        <span class="tag">Trajectory Planning</span>
+                        <span class="tag">LattePanda</span>
+                    </div>
+
+                    <div class="project-hover-effect"></div>
+                    <div class="click-indicator">
+                        <i class="fas fa-arrow-right"></i>
+                        <span>View Details</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll"
+                    onclick="window.open('amr.html', '_blank')">
+                    <div class="project-glow"></div>
+                    <div class="project-bg-pattern"></div>
+
+                    <div class="project-image">
+                        <img src="upload/amr.webp" alt="AMR Development for Factory Automation">
+                        <div class="image-overlay"></div>
+                    </div>
+
+                    <div class="project-icon">
+                        <i class="fas fa-robot"></i>
+                        <div class="icon-ripple"></div>
+                    </div>
+
+                    <h3>AMR Development for Factory Automation (Phoenix Industries)</h3>
+                    <p class="project-date">Apr 2024 - Ongoing</p>
+                    <p>Designed and developed a small-scale AMR for factory automation using ROS2, simulation, and
+                        embedded hardware integration.</p>
+
+                    <ul>
+                        <li>Designed a prototype Autonomous Mobile Robot (AMR) using ROS2, Gazebo, and Arduino</li>
+                        <li>Implemented Simultaneous Localization and Mapping (SLAM) for navigation and mapping</li>
+                        <li>Scaling the project using Nvidia Jetson and Nvidia Omniverse for large-scale training and
+                            simulation</li>
+                        <li>Target application: the factory’s first automated forklift system</li>
+                        <li><strong>Contribution:</strong> Control system development, software development, and
+                            electronics hardware development</li>
+                    </ul>
+
+                    <div class="project-tags">
+                        <span class="tag">ROS2</span>
+                        <span class="tag">Gazebo</span>
+                        <span class="tag">SLAM</span>
+                        <span class="tag">Arduino</span>
+                        <span class="tag">NVIDIA Jetson</span>
+                        <span class="tag">NVIDIA Omniverse</span>
+                    </div>
+
+                    <div class="project-hover-effect"></div>
+                    <div class="click-indicator">
+                        <i class="fas fa-arrow-right"></i>
+                        <span>View Details</span>
+                    </div>
+                </div>
+
+
+                <div class="project-card animate-on-scroll"
+                    onclick="window.open('project-toothbrush-packing-machine.html', '_blank')">
+                    <div class="project-glow"></div>
+                    <div class="project-bg-pattern"></div>
+
+                    <div class="project-image">
+                        <img src="upload/toothbrush.webp" alt="Toothbrush Packing Machine Project">
+                        <div class="image-overlay"></div>
+                    </div>
+
+                    <div class="project-icon">
+                        <i class="fas fa-cogs"></i>
+                        <div class="icon-ripple"></div>
+                    </div>
+
+                    <h3>Toothbrush Packing Machine</h3>
+                    <p class="project-date">Jun 2023 - Aug 2023</p>
+                    <p>Developed high-performance embedded control, machine vision integration, and a web-based HMI for
+                        an automated packing machine.</p>
+
+                    <ul>
+                        <li>Programmed Arduino Portenta H7 (STM32H747) to leverage dual-core architecture for optimized
+                            real-time performance</li>
+                        <li>Customized the AccelStepper library for Portenta H7 compatibility, improving motor control
+                            precision</li>
+                        <li>Developed efficient control algorithms, achieving a 3.2-second cycle time for improved
+                            operational efficiency</li>
+                        <li>Integrated machine vision using the HIKROBOT SC3000 series camera to enhance automation and
+                            accuracy</li>
+                        <li>Designed and deployed a web-based HMI on Raspberry Pi for real-time monitoring and control
+                        </li>
+                    </ul>
+
+                    <div class="project-tags">
+                        <span class="tag">Arduino Portenta H7</span>
+                        <span class="tag">STM32H747</span>
+                        <span class="tag">Dual-Core</span>
+                        <span class="tag">AccelStepper</span>
+                        <span class="tag">Machine Vision</span>
+                        <span class="tag">HIKROBOT SC3000</span>
+                        <span class="tag">Raspberry Pi</span>
+                        <span class="tag">Web HMI</span>
+                    </div>
+
+                    <div class="project-hover-effect"></div>
+                    <div class="click-indicator">
+                        <i class="fas fa-arrow-right"></i>
+                        <span>View Details</span>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+            <div class="projects-cta animate-on-scroll">
+                <a href="project.html" class="view-all-btn">
+                    <span>View All Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="title-bg">EDUCATION</span>
+                <span class="title-text">Education & Certifications</span>
+            </h2>
+            <div class="education-grid">
+                <div class="education-card animate-on-scroll">
+                    <div class="education-glow"></div>
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="icon-pulse"></div>
+                    </div>
+                    <h3>M.Sc. in Data Science and Artificial Intelligence</h3>
+                    <p class="education-school">University of Moratuwa</p>
+                    <p class="education-date">2025 - Present</p>
+                    <p class="education-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Colombo, Sri Lanka
+                    </p>
+                    <p>Specializing in AI, Cloud Computing, and Data Science</p>
+                </div>
+
+                <div class="education-card animate-on-scroll">
+                    <div class="education-glow"></div>
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="icon-pulse"></div>
+                    </div>
+                    <h3>Bachelor of Engineering Technology (Hons) in Mechatronics Technology</h3>
+                    <p class="education-school">University of Sri Jayewardenepura</p>
+                    <p class="education-date">2019 - 2023</p>
+                    <p class="education-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Nugegoda, Sri Lanka
+                    </p>
+                    <p>First Class Honors (3.76 GPA)</p>
+                    <p>Thesis: Design a Prototype of CNC-Based Automated PCB Repairing Machine</p>
+                </div>
+            </div>
+
+            <div class="certifications animate-on-scroll">
+                <h3>Certifications & Awards</h3>
+                <div class="cert-grid"">
+
+                    <div class=" cert-card"
+                    onclick="openCert('https://dqm36sby24sgn.cloudfront.net/fiith_deanlist.pdf')">
+                    <div class="cert-icon">
+                        <i class="fa-solid fa-certificate"></i>
+                        <div class="cert-glow"></div>
+
+                    </div>
+                    <h4>Dean's honour list fifth semester</h4>
+                    <p>University of Sri Jayewardenepura • Jul 2023</p>
+                </div>
+
+
+                <div class="cert-card" onclick="openCert('https://dqm36sby24sgn.cloudfront.net/seventh_deanlist.pdf')">
+                    <div class="cert-icon">
+                        <i class="fa-solid fa-certificate"></i>
+                        <div class="cert-glow"></div>
+
+                    </div>
+                    <h4>Dean's honour list Seventh semester</h4>
+                    <p>University of Sri Jayewardenepura • Jul 2023</p>
+                </div>
+
+
+                <div class="cert-card"
+                    onclick="openCert('https://www.credly.com/badges/58b25da6-a755-49ad-90a7-49b10f4ea89c/public_url')">
+                    <div class="cert-icon">
+                        <i class="fab fa-aws"></i>
+                        <div class="cert-glow"></div>
+                    </div>
+                    <h4>AWS Academy Graduate - Data Engineer</h4>
+                    <p>AWS • Mar 2025</p>
+                </div>
+                <div class="cert-card" onclick="openCert('https://dqm36sby24sgn.cloudfront.net/nvidia.pdf')">
+                    <div class="cert-icon">
+                        <i class="fas fa-brain"></i>
+                        <div class="cert-glow"></div>
+                    </div>
+                    <h4>Fundamentals of Deep Learning</h4>
+                    <p>NVIDIA • Jul 2025</p>
+                </div>
+                <div class="cert-card"
+                    onclick="openCert('https://www.coursera.org/account/accomplishments/verify/J7CLKYJH686P?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course')">
+                    <div class="cert-icon">
+                        <i class="fab fa-python"></i>
+                        <div class="cert-glow"></div>
+                    </div>
+                    <h4>Python for Data Science, AI & Development</h4>
+                    <p>Coursera • Mar 2024</p>
+                </div>
+                <div class="cert-card" onclick="openCert('https://dqm36sby24sgn.cloudfront.net/leadership awads .jpg')">
+                    <div class="cert-icon">
+                        <i class="fas fa-award"></i>
+                        <div class="cert-glow"></div>
+                    </div>
+                    <h4>Leadership Awards 2023</h4>
+                    <p>Phoenix Industries Ltd. • Oct 2023</p>
+                </div>
+
+                <div class="cert-card" onclick="openCert('https://coursera.org/share/3cd11a6af6d99dc22edd0de06832fba1')">
+                    <div class="cert-icon">
+                        <i class="fas fa-industry"></i>
+                        <div class="cert-glow"></div>
+                    </div>
+                    <h4>Digital Manufacturing & Design</h4>
+                    <p>University at Buffalo • Oct 2020</p>
+                </div>
+
+
+                <div class="cert-card"
+                    onclick="openCert('https://www.linkedin.com/redir/redirect/?url=https%3A%2F%2Fcoursera.org%2Fshare%2F24dd7a6113aeac990082b2429d9b8fcf&urlhash=8IEW&isSdui=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BQxcPnzPeRdu%2FbUoV4TesoQ%3D%3D')">
+                    <div class="cert-icon">
+                        <i class="fas fa-cloud"></i>
+                        <div class="cert-glow"></div>
+                    </div>
+                    <h4>Introduction to the Internet of Things and Embedded Systems</h4>
+                    <p>UC Irvine • Nov 2020</p>
+                </div>
+
+
+                <div class="cert-card"
+                    onclick="openCert('https://dqm36sby24sgn.cloudfront.net/Nuwan Sanjeewa - CertificateOfCompletion_C Programming for Embedded Applications.pdf')">
+                    <div class="cert-icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <div class="cert-glow"></div>
+                    </div>
+                    <h4>C Programming for Embedded Applications</h4>
+                    <p>LinkedIn • Feb 2020</p>
+                </div>
+
+                <div class="cert-card"
+                    onclick="openCert('https://dqm36sby24sgn.cloudfront.net/Nuwan Sanjeewa  - CertificateOfCompletion_Learning PCB Design with EAGLE.pdf')">
+                    <div class="cert-icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <div class="cert-glow"></div>
+                    </div>
+                    <h4>Learning PCB Design with EAGLE</h4>
+                    <p>LinkedIn • Jul 2019</p>
+                </div>
+
+
+
+                <div class="cert-card"
+                    onclick="openCert('https://www.credly.com/badges/953fb45a-2a8e-48de-b924-0da21f71602f/public_url')">
+                    <div class="cert-icon">
+                        <i class="fab fa-aws"></i>
+                        <div class="cert-glow"></div>
+                    </div>
+                    <h4>AWS Academy Graduate - Cloud Data Pipeline Builder - Training Badge</h4>
+                    <p>AWS • Feb 2025</p>
+                </div>
+
+                <div class="cert-card"
+                    onclick="openCert('https://www.credly.com/badges/d721a940-6a67-4c4e-b74c-ba4f25f682fd/public_url')">
+                    <div class="cert-icon">
+                        <i class="fab fa-aws"></i>
+                        <div class="cert-glow"></div>
+                    </div>
+                    <h4>AWS Academy Graduate - Microservices and CI/CD Pipeline Builder - Training Badge</h4>
+                    <p>AWS • Jan 2025</p>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="title-bg">PUBLICATIONS</span>
+                <span class="title-text">Research Publications</span>
+            </h2>
+            <div class="publications-grid animate-on-scroll">
+                <div class="publication-card">
+                    <div class="publication-icon">
+                        <i class="fas fa-microscope"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="publication-content">
+                        <h3>Real-Time Coordinate Estimation for SCARA Robots in PCB Repair Using Vision and Laser
+                            Triangulation</h3>
+                        <p class="publication-journal">
+                            <i class="fas fa-book"></i>
+                            MDPI Instruments, 2024
+                        </p>
+                        <p class="publication-description">
+                            Advanced research on real-time coordinate estimation systems for SCARA robots implementing
+                            vision and laser triangulation
+                            techniques for precise PCB repair applications in industrial automation.
+                        </p>
+                        <div class="publication-meta">
+                            <span class="publication-year">2024</span>
+                            <span class="publication-type">Journal Article</span>
+                        </div>
+                        <a href="https://doi.org/10.3390/instruments9020007" target="_blank" class="publication-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>View Publication</span>
+                        </a>
+                    </div>
+                    <div class="publication-glow"></div>
+                </div>
+
+                <div class="publication-card">
+                    <div class="publication-icon">
+                        <i class="fas fa-leaf"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="publication-content">
+                        <h3>Image Acquisition and Deep Convolution Neural Network Incorporated Cost-Effective Automated
+                            Nursery Disease Detection Method for the Tea Industry</h3>
+                        <p class="publication-journal">
+                            <i class="fas fa-book"></i>
+                            IEEE Xplore, 2024
+                        </p>
+                        <p class="publication-description">
+                            Novel approach implementing deep convolutional neural networks with image acquisition
+                            systems for cost-effective
+                            automated disease detection in tea nursery applications, combining computer vision with
+                            agricultural automation.
+                        </p>
+                        <div class="publication-meta">
+                            <span class="publication-year">2024</span>
+                            <span class="publication-type">Conference Paper</span>
+                        </div>
+                        <a href="https://doi.org/10.1109/MERCon63886.2024.10688954" target="_blank"
+                            class="publication-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>View Publication</span>
+                        </a>
+                    </div>
+                    <div class="publication-glow"></div>
+                </div>
+            </div>
+
+            <div class="publications-summary animate-on-scroll">
+                <div class="summary-card">
+                    <div class="summary-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="summary-content">
+                        <h4>Research Impact</h4>
+                        <p>Contributing to advancing robotics and computer vision research with practical applications
+                            in industrial automation and agricultural technology.</p>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="summary-content">
+                        <h4>Collaborations</h4>
+                        <p>Research conducted in collaboration with industry partners and academic institutions to
+                            bridge theoretical knowledge with practical implementation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="title-bg">CONTACT</span>
+                <span class="title-text">Get In Touch</span>
+            </h2>
+            <div class="contact-content animate-on-scroll">
+                <div class="contact-text">
+                    <p>
+                        I'm always interested in discussing new opportunities, collaborations, and innovative projects
+                        in mechatronics, AI, and robotics.
+                    </p>
+                    <p>
+                        Feel free to reach out if you'd like to work together or just chat about technology!
+                    </p>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                            <div class="icon-ripple"></div>
+                        </div>
+                        <div>
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:snuwan098@gmail.com">snuwan098@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                            <div class="icon-ripple"></div>
+                        </div>
+                        <div>
+                            <span class="contact-label">Phone</span>
+                            <a href="tel:+94719894561">+94 719 894 561</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="icon-ripple"></div>
+                        </div>
+                        <div>
+                            <span class="contact-label">Location</span>
+                            <span>Galle, Sri Lanka</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                            <div class="icon-ripple"></div>
+                        </div>
+                        <div>
+                            <span class="contact-label">Website</span>
+                            <a href="https://sites.google.com/view/nuwan-sanjeewa/" target="_blank">nuwan-sanjeewa</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-buttons">
+                    <a href="mailto:snuwan098@gmail.com" class="btn btn-primary">
+                        <span class="btn-content">
+                            <i class="fas fa-envelope"></i>
+                            <span>Send Email</span>
+                        </span>
+                        <div class="btn-ripple"></div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nuwan-sanjeewa-556b471b5/" class="btn btn-secondary">
+                        <span class="btn-content">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </span>
+                        <div class="btn-ripple"></div>
+                    </a>
+                    <a href="tel:+94719894561" class="btn btn-secondary">
+                        <span class="btn-content">
+                            <i class="fas fa-phone"></i>
+                            <span>Call</span>
+                        </span>
+                        <div class="btn-ripple"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Nuwan Sanjeewa. Designed with passion for mechatronics and innovation.</p>
+            <div class="footer-particles"></div>
+        </div>
+    </footer>
+
+    <script>
+        function openCert(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+
+    <script src="chatbot-config.js"></script>
+    <script src="chatbot.js"></script>
+    <script src="script-advanced.js"></script>
+</body>
+
+</html>

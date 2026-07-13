@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-Axis CNC Gantry Robot - Nuwan Sanjeewa</title>
+    <link rel="stylesheet" href="project-detail.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-layer bg-layer-1"></div>
+        <div class="bg-layer bg-layer-2"></div>
+        <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-microchip"></i>
+                    <div class="logo-pulse"></div>
+                </div>
+                <span class="logo-text">Nuwan Sanjeewa</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index-advanced.html" class="nav-link">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Portfolio
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="hero-particles"></div>
+        <div class="project-hero-content">
+            <div class="project-badge">
+                <i class="fas fa-cogs"></i>
+                <span>CNC Project</span>
+            </div>
+            <h1 class="project-title">5-Axis Large Scale CNC Gantry Robot</h1>
+            <p class="project-subtitle">
+                Custom CNC software and hardware integration for precise large-scale gantry operations.
+            </p>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>Sep 2024 – Nov 2024</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-clock"></i>
+                    <span>2 months</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-user"></i>
+                    <span>Software & Hardware Developer</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-hero-image">
+            <div class="image-container">
+                <img src="upload/northsails3.jpeg"
+                    alt="IoT Energy Monitoring">
+                <div class="image-overlay"></div>
+                <div class="image-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-section">
+        <div class="container">
+            <h2 class="section-title">Project Overview</h2>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <p>
+                        Developed a large-scale 5-axis CNC gantry robot for North Sails, capable of high-precision
+                        machining with millimeter-level accuracy. The project involved full-stack custom software
+                        development, advanced motion control, and hardware integration for large-scale industrial
+                        operations.
+                    </p>
+                    <p>
+                        The CNC system utilized Teknic Clear Path SD Motors with advanced SDK support, enabling
+                        jerk-free motion, coordinate lerping, and smooth trajectory planning. A LattePanda single-board
+                        computer was implemented as a teach pendant to run the custom .NET-based CNC software,
+                        providing a fully integrated operator interface.
+                    </p>
+                </div>
+
+                <div class="overview-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Axes Controlled</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">0.001 mm</div>
+                        <div class="stat-label">Positioning Accuracy</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Custom Software & Wiring</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Implementation -->
+    <section class="project-section section-dark">
+        <div class="container">
+            <h2 class="section-title">Technical Implementation</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>.NET CNC Software</h3>
+                    <p>
+                        Developed custom CNC control software using the .NET Framework to manage 5-axis gantry
+                        operations, enabling precise trajectory planning and motion profiles.
+                    </p>
+                    <ul>
+                        <li>Jerk-free motion control</li>
+                        <li>Coordinate lerping & trajectory planning</li>
+                        <li>Millimeter precision execution</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Teknic Clear Path Motors</h3>
+                    <p>
+                        Integrated Teknic Clear Path SD motors using SDK, achieving high-performance motion control
+                        and synchronization across all axes.
+                    </p>
+                    <ul>
+                        <li>Advanced motor profiles</li>
+                        <li>High-speed and accurate positioning</li>
+                        <li>Full SDK utilization</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>LattePanda SBC</h3>
+                    <p>
+                        Implemented a LattePanda single-board computer as a teach pendant to run CNC software,
+                        allowing interactive control and parameter adjustments.
+                    </p>
+                    <ul>
+                        <li>Operator interface</li>
+                        <li>Software execution platform</li>
+                        <li>Integrated CNC control</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Panel & QA</h3>
+                    <p>
+                        Performed panel board wiring and ensured quality assurance through extensive testing and
+                        calibration of the CNC gantry system.
+                    </p>
+                    <ul>
+                        <li>Full panel wiring</li>
+                        <li>System testing</li>
+                        <li>Calibration & QA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Achievements -->
+    <section class="project-section">
+        <div class="container">
+            <h2 class="section-title">Key Achievements</h2>
+            <div class="achievements-timeline">
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Custom CNC Software</h3>
+                        <p>Developed a fully custom software solution for multi-axis gantry control with advanced motion
+                            profiles.</p>
+                    </div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Hardware Integration</h3>
+                        <p>Implemented Teknic SD Motors and LattePanda SBC for a complete hardware-software integration
+                            solution.</p>
+                    </div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Full System Delivery</h3>
+                        <p>Completed panel wiring, QA, and calibration, delivering a high-precision, large-scale CNC
+                            gantry system.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Used -->
+    <section class="project-section section-dark">
+        <div class="container">
+            <h2 class="section-title">Technologies Used</h2>
+            <div class="tech-stack">
+                <!-- Hardware -->
+                <div class="tech-category">
+                    <h3>Hardware & Electronics</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">Teknic Clear Path SD Motors</span>
+                        <span class="tech-tag">LattePanda SBC</span>
+                        <span class="tech-tag">Custom Panel Wiring</span>
+                        <span class="tech-tag">5-Axis Gantry Frame</span>
+                        <span class="tech-tag">End Stops & Sensors</span>
+                        <span class="tech-tag">Power Electronics</span>
+                    </div>
+                </div>
+
+                <!-- Software -->
+                <div class="tech-category">
+                    <h3>Software & Control</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">.NET Framework</span>
+                        <span class="tech-tag">Custom CNC Software</span>
+                        <span class="tech-tag">Jerk-Free Motion Profiles</span>
+                        <span class="tech-tag">Coordinate Lerping</span>
+                        <span class="tech-tag">Trajectory Planning</span>
+                        <span class="tech-tag">Operator Teach Pendant UI</span>
+                    </div>
+                </div>
+
+                <!-- Motion & Integration -->
+                <div class="tech-category">
+                    <h3>Motion & Integration</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">Multi-Axis Synchronization</span>
+                        <span class="tech-tag">Millimeter Precision</span>
+                        <span class="tech-tag">Real-Time Feedback</span>
+                        <span class="tech-tag">SDK Integration</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Project Gallery -->
+    <section class="project-section">
+        <div class="container">
+            <h2 class="section-title">Project Gallery</h2>
+            <div class="project-gallery">
+                <div class="gallery-item">
+                    <img src="upload/northsails1.jpeg" alt="CNC Gantry Robot">
+                    <div class="gallery-overlay">
+                        <h4>Gantry Overview</h4>
+                        <p>Large-scale 5-axis CNC gantry robot</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="upload/northsails_rd.jpg" alt="Panel Wiring">
+                    <div class="gallery-overlay">
+                        <h4>Servor Testing</h4>
+                        <p>Clear-Path SC motors Testing</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="upload/northsails3.jpeg" alt="CNC Software">
+                    <div class="gallery-overlay">
+                        <h4>CNC Software</h4>
+                        <p>Custom .NET-based CNC control interface</p>
+                    </div>
+                </div>
+
+
+
+                <div class="gallery-item">
+                    <a href="https://youtu.be/xuVKYauvOGs" target="_blank">
+                        <img src="https://img.youtube.com/vi/xuVKYauvOGs/0.jpg" alt="Project Video">
+                        <div class="gallery-overlay">
+                            <h4>Project Demo Video</h4>
+                            <p>Click to watch on YouTube</p>
+                        </div>
+                    </a>
+                </div>
+
+
+
+
+                <div class="gallery-item">
+                    <a href="https://youtu.be/eTEUrwWrgM8" target="_blank">
+                        <img src="https://img.youtube.com/vi/eTEUrwWrgM8/0.jpg" alt="Project Video">
+                        <div class="gallery-overlay">
+                            <h4>Project Demo Video</h4>
+                            <p>Click to watch on YouTube</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="gallery-item">
+                    <a href="https://youtube.com/shorts/zkJyPvlNVuA" target="_blank">
+                        <img src="https://img.youtube.com/vi/zkJyPvlNVuA/0.jpg" alt="Project Video">
+                        <div class="gallery-overlay">
+                            <h4>Project Demo Video</h4>
+                            <p>Click to watch on YouTube</p>
+                        </div>
+                    </a>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="project-footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="index-advanced.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Portfolio</span>
+                </a>
+                <div class="footer-links">
+                    <a href="mailto:snuwan098@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nuwan-sanjeewa-556b471b5/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="tel:+94719894561">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="project-detail.js"></script>
+</body>
+
+</html>
